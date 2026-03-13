@@ -99,7 +99,7 @@ src/
 
 - Adicionar autenticação (Firebase Auth).
 - Melhorar validação de formulário com `react-hook-form` ou `zod`.
-- Adicionar paginação/ordenção na tabela.
+- Adicionar paginação/sorting na tabela.
 - Adicionar buscas e filtro por departamento.
 
 ---
