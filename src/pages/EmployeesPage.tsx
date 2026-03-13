@@ -38,10 +38,10 @@ function EmployeesPage() {
 
   useEffect(() => {
     if (location.state?.message) {
-      showAlert(location.state.message)
+      showAlert(location.state.message);
     }
 
-    fetchEmployees()
+    fetchEmployees();
   }, []);
 
   return (
@@ -99,6 +99,9 @@ function EmployeesPage() {
         onEdit={() => {
           fetchEmployees();
           showAlert("Colaborador editado com sucesso!");
+        }}
+        onError={(message) => {
+          showAlert(message, "error");
         }}
       />
       <Snackbar
